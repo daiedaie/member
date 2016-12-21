@@ -20,5 +20,6 @@
   
   <modules>
   	<module>member-common</module>
+    <module>member-common-api</module>
   </modules>
 </project>

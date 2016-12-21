@@ -7,13 +7,15 @@
     <artifactId>member</artifactId>
     <version>1.0.0-SNAPSHOT</version>
   </parent>
-  <artifactId>member-common</artifactId>
-  <name>member-common</name>
+  <groupId>com.paytong.platform</groupId>
+  <artifactId>member-common-api</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <name>member-common-api</name>
   <url>http://maven.apache.org</url>
   <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<project.nexus>http://localhost:8081</project.nexus>
+		<project.nexus>http://192.168.101.238:8081</project.nexus>
 		<project.gitserver>192.168.101.11</project.gitserver>
 		<project.remoteArtifactRepositories>${project.nexus}/nexus/content/groups/public</project.remoteArtifactRepositories>
 		<sonar.language>java</sonar.language>
@@ -21,110 +23,13 @@
 		<skipJavaDoc>true</skipJavaDoc>
 		<compiler.debug>true</compiler.debug>
 		<compiler.optimize>true</compiler.optimize>
-		<springframework.version>4.2.0.RELEASE</springframework.version>
-		<hibernate.version>4.2.0.Final</hibernate.version>
-		<rocketmq.version>3.2.6</rocketmq.version>
 		<git.project>https://github.com/dmcguojia/zplatform-member-commons.git</git.project>
 	</properties>
-
-
-	<scm>
-		<connection>scm:git://${git.project}}</connection>
-		<developerConnection>scm:git://${git.project}</developerConnection>
-	</scm>
-	<dependencies>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.12</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>fastjson</artifactId>
-			<version>1.2.7</version>
-		</dependency>
-		<dependency>
-			<groupId>commons-lang</groupId>
-			<artifactId>commons-lang</artifactId>
-			<version>2.6</version>
-		</dependency>
-		<dependency>
-			<groupId>com.google.guava</groupId>
-			<artifactId>guava</artifactId>
-			<version>19.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-context</artifactId>
-			<version>${springframework.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-context-support</artifactId>
-			<version>${springframework.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-orm</artifactId>
-			<version>${springframework.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-aspects</artifactId>
-			<version>${springframework.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-aop</artifactId>
-			<version>${springframework.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>commons-net</groupId>
-			<artifactId>commons-net</artifactId>
-			<version>3.3</version>
-		</dependency>
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-c3p0</artifactId>
-			<version>${hibernate.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-validator</artifactId>
-			<version>4.2.0.Final</version>
-		</dependency>
-		<dependency>
-			<groupId>oracle</groupId>
-			<artifactId>ojdbc14</artifactId>
-			<version>10.2.0.4</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-core</artifactId>
-			<version>${springframework.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-beans</artifactId>
-			<version>${springframework.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>cglib</groupId>
-			<artifactId>cglib</artifactId>
-			<version>2.2</version>
-		</dependency>
-		<dependency>
-			<groupId>com.zlebank.zplatform</groupId>
-			<artifactId>zplatform-member-commons-api</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
-		</dependency>
-	</dependencies>
 	<repositories>
 		<repository>
 			<id>zplatform-Snapshots</id>
 			<name>zplatform-Snapshots</name>
-			<url>${project.nexus}/nexus/content/repositories/snapshots</url>
+			<url>${project.nexus}/nexus/content/repositories/zplatform-Snapshots</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
@@ -135,7 +40,7 @@
 		<repository>
 			<id>zplatform-Releases</id>
 			<name>zplatform-Releases</name>
-			<url>${project.nexus}/nexus/content/repositories/releases</url>
+			<url>${project.nexus}/nexus/content/repositories/zplatform-Releases</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
@@ -174,17 +79,14 @@
 		<repository>
 			<id>zplatform-Releases</id>
 			<name>Nexus Release</name>
-			<url>${project.nexus}/nexus/content/repositories/releases/</url>
+			<url>${project.nexus}/nexus/content/repositories/zplatform-Releases</url>
 		</repository>
 		<snapshotRepository>
 			<id>zplatform-Snapshots</id>
 			<name>Nexus Snapshots</name>
-			<url>${project.nexus}/nexus/content/repositories/snapshots</url>
+			<url>${project.nexus}/nexus/content/repositories/zplatform-Snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
-
-
-
 	<build>
 
 		<resources>
@@ -359,5 +261,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
