@@ -10,7 +10,7 @@
   <artifactId>member-common</artifactId>
   <name>member-common</name>
   <url>http://maven.apache.org</url>
-  <properties>
+  <!-- <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<project.nexus>http://localhost:8081</project.nexus>
@@ -25,7 +25,7 @@
 		<hibernate.version>4.2.0.Final</hibernate.version>
 		<rocketmq.version>3.2.6</rocketmq.version>
 		<git.project>https://github.com/dmcguojia/zplatform-member-commons.git</git.project>
-	</properties>
+	</properties> -->
 
 
 	<scm>

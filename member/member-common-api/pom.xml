@@ -12,7 +12,7 @@
   <version>1.0.0-SNAPSHOT</version>
   <name>member-common-api</name>
   <url>http://maven.apache.org</url>
-  <properties>
+  <!-- <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<project.nexus>http://192.168.101.238:8081</project.nexus>
@@ -24,7 +24,7 @@
 		<compiler.debug>true</compiler.debug>
 		<compiler.optimize>true</compiler.optimize>
 		<git.project>https://github.com/dmcguojia/zplatform-member-commons.git</git.project>
-	</properties>
+	</properties> -->
 	<repositories>
 		<repository>
 			<id>zplatform-Snapshots</id>

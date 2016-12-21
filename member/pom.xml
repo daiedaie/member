@@ -15,8 +15,21 @@
   </distributionManagement>
 
   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<project.nexus>http://localhost:8081</project.nexus>
+		<project.gitserver>192.168.101.11</project.gitserver>
+		<project.remoteArtifactRepositories>${project.nexus}/nexus/content/groups/public</project.remoteArtifactRepositories>
+		<sonar.language>java</sonar.language>
+		<skipTests>true</skipTests>
+		<skipJavaDoc>true</skipJavaDoc>
+		<compiler.debug>true</compiler.debug>
+		<compiler.optimize>true</compiler.optimize>
+		<springframework.version>4.2.0.RELEASE</springframework.version>
+		<hibernate.version>4.2.0.Final</hibernate.version>
+		<rocketmq.version>3.2.6</rocketmq.version>
+		<git.project>https://github.com/dmcguojia/zplatform-member-commons.git</git.project>
+	</properties>
   
   <modules>
   	<module>member-common</module>
