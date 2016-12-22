@@ -34,5 +34,7 @@
   <modules>
   	<module>member-common</module>
     <module>member-common-api</module>
+    <module>member-individual-api</module>
+    <module>member-individual</module>
   </modules>
 </project>
