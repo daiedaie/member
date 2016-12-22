@@ -62,7 +62,7 @@
 		<!-- 注解方式配置 -->
 		<property name="packagesToScan">
 			<list>
-				<value>com.paytong.platform.member.individual.pojo</value>			
+				<value>com.zlebank.zplatform.member.merchant.pojo</value>			
 			</list>
 		</property>
 

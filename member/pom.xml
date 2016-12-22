@@ -268,5 +268,8 @@
     <module>member-coopinsti</module>
     <module>member-coopinsti-api</module>
     <module>member-coopinsti-simple</module>
+    <module>member-merchant-api</module>
+    <module>member-merchant</module>
+    <module>member-merchant-simple</module>
   </modules>
 </project>
