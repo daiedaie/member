@@ -8,7 +8,7 @@
  * Copyright (c) 2016,zlebank.All rights reserved.
  * 
  */
-package com.paytong.platform.member.individual.aop;
+package com.paytong.platform.member.commons.utils;
 
 import java.lang.reflect.Method;
 

@@ -13,15 +13,11 @@
       <url>scp://webhost.company.com/www/website</url>
     </site>
   </distributionManagement>
-<scm>
-		<connection>scm:git://${git.project}}</connection>
-		<developerConnection>scm:git://${git.project}</developerConnection>
-	</scm>
+
   <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<project.nexus>http://localhost:8081</project.nexus>
-		<project.gitserver>192.168.101.11</project.gitserver>
 		<project.remoteArtifactRepositories>${project.nexus}/nexus/content/groups/public</project.remoteArtifactRepositories>
 		<sonar.language>java</sonar.language>
 		<skipTests>true</skipTests>
@@ -32,8 +28,13 @@
 		<hibernate.version>4.2.0.Final</hibernate.version>
 		<rocketmq.version>3.2.6</rocketmq.version>
 		<project.version>1.0.0-SNAPSHOT</project.version>
-		<git.project>https://github.com/dmcguojia/zplatform-member-commons.git</git.project>
+		<project.account.version>1.0.0-SNAPSHOT</project.account.version>
+		<git.project>https://github.com/dmcguojia/member.git</git.project>
 	</properties>
+	<scm>
+		<connection>scm:git://${git.project}}</connection>
+		<developerConnection>scm:git://${git.project}</developerConnection>
+	</scm>
   <build>
 
 		<resources>
