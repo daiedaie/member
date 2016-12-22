@@ -265,5 +265,8 @@
     <module>member-individual-api</module>
     <module>member-individual</module>
     <module>member-individual-simple</module>
+    <module>member-coopinsti</module>
+    <module>member-coopinsti-api</module>
+    <module>member-coopinsti-simple</module>
   </modules>
 </project>
