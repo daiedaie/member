@@ -14,9 +14,9 @@ import java.util.List;
 
 import org.springframework.transaction.annotation.Transactional;
 
+import com.paytong.platform.member.commons.bean.DefaultPageResult;
+import com.paytong.platform.member.commons.bean.PagedResult;
 import com.paytong.platform.member.commons.dao.impl.HibernateBaseDAOImpl;
-import com.zlebank.zplatform.member.commons.bean.DefaultPageResult;
-import com.zlebank.zplatform.member.commons.bean.PagedResult;
 
 /**
  *  A dao implement of  {@link HibernateBaseDAOImpl}. This implement support for page query by QBE

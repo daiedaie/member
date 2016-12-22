@@ -15,7 +15,7 @@ import java.util.List;
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Projections;
 
-import com.zlebank.zplatform.member.commons.dao.BasePagedQueryDAO;
+import com.paytong.platform.member.commons.dao.BasePagedQueryDAO;
 
 
 /**

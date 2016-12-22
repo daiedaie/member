@@ -14,7 +14,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.zlebank.zplatform.member.commons.dao.BaseDAO;
+import com.paytong.platform.member.commons.dao.BaseDAO;
 
 /**
  * hibernate数据库连接实现类，里面有SessionFactory，可以取到Session
