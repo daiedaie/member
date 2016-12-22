@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.paytong.platform</groupId>
-  <artifactId>member</artifactId>
-  <version>${project.version}</version>
-  <packaging>pom</packaging>
-
-  <distributionManagement>
-    <site>
-      <id>website</id>
-      <url>scp://webhost.company.com/www/website</url>
-    </site>
-  </distributionManagement>
-
-  <properties>
+	<groupId>com.paytong.platform</groupId>
+	<artifactId>member</artifactId>
+	<version>${project.version}</version>
+	<packaging>pom</packaging>
+	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<project.nexus>http://localhost:8081</project.nexus>
@@ -35,7 +28,7 @@
 		<connection>scm:git://${git.project}}</connection>
 		<developerConnection>scm:git://${git.project}</developerConnection>
 	</scm>
-  <build>
+	<build>
 
 		<resources>
 			<resource>
@@ -209,7 +202,7 @@
 			</plugin>
 		</plugins>
 	</build>
-	
+
 	<repositories>
 		<repository>
 			<id>zplatform-Snapshots</id>
@@ -259,17 +252,29 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
-  <modules>
-  	<module>member-common</module>
-    <module>member-common-api</module>
-    <module>member-individual-api</module>
-    <module>member-individual</module>
-    <module>member-individual-simple</module>
-    <module>member-coopinsti</module>
-    <module>member-coopinsti-api</module>
-    <module>member-coopinsti-simple</module>
-    <module>member-merchant-api</module>
-    <module>member-merchant</module>
-    <module>member-merchant-simple</module>
-  </modules>
+	<distributionManagement>
+		<repository>
+			<id>zplatform-Releases</id>
+			<name>Nexus Release</name>
+			<url>${project.nexus}/nexus/content/repositories/zplatform-Releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>zplatform-Snapshots</id>
+			<name>Nexus Snapshots</name>
+			<url>${project.nexus}/nexus/content/repositories/zplatform-Snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+	<modules>
+		<module>member-common</module>
+		<module>member-common-api</module>
+		<module>member-individual-api</module>
+		<module>member-individual</module>
+		<module>member-individual-simple</module>
+		<module>member-coopinsti</module>
+		<module>member-coopinsti-api</module>
+		<module>member-coopinsti-simple</module>
+		<module>member-merchant-api</module>
+		<module>member-merchant</module>
+		<module>member-merchant-simple</module>
+	</modules>
 </project>

@@ -11,17 +11,4 @@
 	<artifactId>member-common-api</artifactId>
 	<name>member-common-api</name>
 	<url>http://maven.apache.org</url>
-	<distributionManagement>
-		<repository>
-			<id>zplatform-Releases</id>
-			<name>Nexus Release</name>
-			<url>${project.nexus}/nexus/content/repositories/zplatform-Releases</url>
-		</repository>
-		<snapshotRepository>
-			<id>zplatform-Snapshots</id>
-			<name>Nexus Snapshots</name>
-			<url>${project.nexus}/nexus/content/repositories/zplatform-Snapshots</url>
-		</snapshotRepository>
-	</distributionManagement>
-
 </project>
