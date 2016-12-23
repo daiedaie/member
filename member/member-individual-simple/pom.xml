@@ -140,7 +140,7 @@
 				<artifactId>maven-assembly-plugin</artifactId>
 				<version>2.4</version>
 				<configuration>
-					<finalName>zplatform-payment</finalName>
+					<finalName>member-individual</finalName>
 					<descriptors>
 						<descriptor>src/main/assembly.xml</descriptor>
 					</descriptors>
