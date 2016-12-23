@@ -17,8 +17,8 @@ import java.sql.SQLException;
 import org.hibernate.HibernateException;
 import org.hibernate.engine.spi.SessionImplementor;
 
+import com.paytong.platform.member.individual.bean.enums.MemberType;
 import com.zlebank.zplatform.member.commons.enums.BaseEnumSqlType;
-import com.zlebank.zplatform.member.individual.bean.enums.MemberType;
 
 /**
  * Class Description

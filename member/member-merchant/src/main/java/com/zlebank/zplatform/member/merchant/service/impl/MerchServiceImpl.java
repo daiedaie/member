@@ -18,6 +18,9 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.paytong.platform.member.individual.service.MemberInfoService;
+import com.paytong.platform.member.individual.service.MemberService;
+import com.paytong.platform.member.individual.service.PrimayKeyService;
 import com.paytong.platform.member.merchant.bean.MerchantBean;
 import com.paytong.platform.member.merchant.bean.enums.MerchStatusType;
 import com.paytong.platform.member.merchant.service.MerchService;
@@ -25,9 +28,6 @@ import com.zlebank.zplatform.acc.exception.AbstractBusiAcctException;
 import com.zlebank.zplatform.member.commons.utils.BeanCopyUtil;
 import com.zlebank.zplatform.member.commons.utils.StringUtil;
 import com.zlebank.zplatform.member.exception.MemberBussinessException;
-import com.zlebank.zplatform.member.individual.service.MemberInfoService;
-import com.zlebank.zplatform.member.individual.service.MemberService;
-import com.zlebank.zplatform.member.individual.service.PrimayKeyService;
 import com.zlebank.zplatform.member.merchant.dao.MerchDAO;
 import com.zlebank.zplatform.member.merchant.pojo.PojoMerchDeta;
 

@@ -10,9 +10,7 @@
   <artifactId>member-merchant</artifactId>
   <name>member-merchant</name>
   <url>http://maven.apache.org</url>
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+  
   <dependencies>
     <dependency>
 			<groupId>com.alibaba</groupId>
@@ -56,9 +54,9 @@
 	    	<version>${project.version}</version>
 	    </dependency>
 		<dependency>
-			<groupId>com.zlebank.zplatform</groupId>
-			<artifactId>zplatform-member-merchant-api</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
+			<groupId>com.paytong.platform</groupId>
+			<artifactId>member-individual-api</artifactId>
+			<version>${project.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.paytong.platform</groupId>

@@ -22,9 +22,9 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.Type;
 
-import com.zlebank.zplatform.member.individual.bean.enums.MemberStatusType;
-import com.zlebank.zplatform.member.individual.bean.enums.MemberType;
-import com.zlebank.zplatform.member.individual.bean.enums.RealNameLvType;
+import com.paytong.platform.member.individual.bean.enums.MemberStatusType;
+import com.paytong.platform.member.individual.bean.enums.MemberType;
+import com.paytong.platform.member.individual.bean.enums.RealNameLvType;
 
 /**
  * Class Description
